@@ -3,7 +3,7 @@ const Post = require('./Post')
 class Author{
     constructor(author){
         this.author = author
-        this.posts = []
+        this.posts = [Post]
     }
 
     addPost(){
@@ -12,5 +12,8 @@ class Author{
         return newPost;
     }
 }
+
+
+
 
 module.exports = Author

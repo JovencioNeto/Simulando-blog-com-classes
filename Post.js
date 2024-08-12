@@ -1,13 +1,19 @@
-const comment1 = require('./Comment')
+const Comment = require('./Comment')
+const Author = require('./Author')
 
 class Post{
-    constructor(){
-        this.comment = []
+    constructor(title,content){
+        this.title = title
+        this.content = content
+        this.author = Author
+        this.comment = Comment
     }
 
     addComment(){
         this.comment.push(Comment)
     }
 }
+
+
 
 module.exports = Post

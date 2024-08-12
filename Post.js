@@ -10,7 +10,7 @@ class Post{
     }
 
     addComment(){
-        this.comment.push(Comment)
+        this.comment.push(comment)
     }
 }
 

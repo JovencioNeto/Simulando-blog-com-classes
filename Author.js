@@ -1,9 +1,9 @@
 const Post = require('./Post')
 
 class Author{
-    constructor(author){
+    constructor(author,post){
         this.author = author
-        this.posts = [Post]
+        this.posts = [post]
     }
 
     addPost(){

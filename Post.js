@@ -1,16 +1,16 @@
-const Comment = require('./Comment')
 const Author = require('./Author')
 
 class Post{
-    constructor(title,content){
+    constructor(title,content,author){
         this.title = title
         this.content = content
-        this.author = Author
-        this.comment = Comment
+        this.author = author
+        this.comment = []
     }
 
-    addComment(){
+    addComment(comment){
         this.comment.push(comment)
+        return this.comment
     }
 }
 
